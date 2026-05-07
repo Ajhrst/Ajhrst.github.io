@@ -1,17 +1,12 @@
 // =============================================
 //  TERMINAL - Interactive Commands
-//  To add a new command:
-//  1. Add a new block inside the commands object
-//  2. The key is what the user types
-//  3. Each { t: 'out', v: 'text' } is one line of output
-//  4. Use t: 'err' for red error text
 // =============================================
 
 const output = document.getElementById('term-output');
 const input  = document.getElementById('term-cmd');
 
 
-// ---- ADD OR EDIT COMMANDS HERE ----
+// ---- adding more commands later ----
 const commands = {
 
   help: () => [
@@ -63,13 +58,13 @@ const commands = {
   },
 
   // Easter eggs
-  sudo:  () => [{ t: 'err', v: "Nice try. You don't have sudo access here." }],
+  sudo:  () => [{ t: 'err', v: "Nice try pal" }],
   ls:    () => [{ t: 'out', v: 'homelab/   portfolio/   skills.txt   contact.txt' }],
   pwd:   () => [{ t: 'out', v: '/home/andrew' }],
   uname: () => [{ t: 'out', v: 'Linux ubuntu-server 6.5.0 #1 SMP x86_64 GNU/Linux' }],
 
 };
-// ---- END OF COMMANDS ----
+// ---- end ----
 
 
 // Prints a single line to the terminal

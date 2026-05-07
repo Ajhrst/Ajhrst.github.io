@@ -1,5 +1,5 @@
 /* =============================================
-   RESET & BASE
+   base
    ============================================= */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-/* COLOURS - change these to restyle the whole site */
+/* colours for the whole site theme */
 :root {
   --bg: #f7f5f2;
   --white: #ffffff;
@@ -33,7 +33,7 @@ body {
 
 
 /* =============================================
-   NAV
+   nav
    ============================================= */
 nav {
   position: fixed;
@@ -106,7 +106,7 @@ nav {
 
 
 /* =============================================
-   HERO
+   hero
    ============================================= */
 .hero-section {
   min-height: 100vh;
@@ -167,7 +167,7 @@ nav {
 
 
 /* =============================================
-   SHARED
+   shared section
    ============================================= */
 .section-title {
   font-family: var(--serif);
@@ -180,7 +180,7 @@ nav {
 
 
 /* =============================================
-   WORK / PROJECTS
+   project area
    ============================================= */
 .work-section {
   padding: 6rem 3rem;
@@ -313,7 +313,7 @@ nav {
 
 
 /* =============================================
-   INTERACTIVE TERMINAL
+   Terminal stuff
    ============================================= */
 .terminal-interactive {
   background: #0f0f0f;
@@ -425,7 +425,7 @@ nav {
 
 
 /* =============================================
-   SKILLS
+   Skills 
    ============================================= */
 .skills-section {
   background: var(--white);
@@ -545,7 +545,7 @@ nav {
 
 
 /* =============================================
-   FOOTER
+   footer
    ============================================= */
 footer {
   background: var(--dark);
@@ -580,7 +580,7 @@ footer {
 
 
 /* =============================================
-   RESPONSIVE
+   responsive
    ============================================= */
 @media (max-width: 768px) {
 
