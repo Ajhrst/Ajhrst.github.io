@@ -104,6 +104,7 @@ nav {
   display: block;
 }
 
+
 /* =============================================
    HERO
    ============================================= */
@@ -208,21 +209,6 @@ nav {
   direction: ltr;
 }
 
-/* Light placeholder for hardware project */
-.project-img--light {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  border: 1px solid var(--border);
-  background: #f0ede8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  overflow: hidden;
-}
-
-/* White preview for portfolio project */
 .project-img--white {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -235,13 +221,6 @@ nav {
   overflow: hidden;
 }
 
-.img-label {
-  font-size: 13px;
-  color: #aaa;
-  letter-spacing: 0.05em;
-}
-
-/* Mini portfolio preview */
 .portfolio-preview-nav {
   width: 100%;
   display: flex;
@@ -289,7 +268,6 @@ nav {
   line-height: 1.6;
 }
 
-/* Project text */
 .project-info h4 {
   font-family: var(--serif);
   font-size: 22px;
@@ -383,7 +361,6 @@ nav {
   gap: 3px;
 }
 
-/* Scrollbar styling for the terminal */
 .term-body::-webkit-scrollbar { width: 4px; }
 .term-body::-webkit-scrollbar-track { background: transparent; }
 .term-body::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
@@ -414,7 +391,6 @@ nav {
 
 .term-out {
   color: #ccc;
-  padding-left: 0;
   width: 100%;
   white-space: pre;
 }
@@ -498,7 +474,6 @@ nav {
   letter-spacing: 0.02em;
 }
 
-/* Skill badge colours */
 .skill-icon-img--ubuntu  { background: #E95420; border-radius: 50%; }
 .skill-icon-img--kali    { background: #557C94; border-radius: 50%; }
 .skill-icon-img--mysql   { background: #00618A; }

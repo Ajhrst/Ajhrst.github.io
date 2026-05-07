@@ -13,8 +13,8 @@
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
-  <img src="YOOOO.gif" alt="Andrew Hirst" class="nav-photo">
-  </a>
+      <img src="YOOOO.gif" alt="Andrew Hirst" class="nav-photo">
+    </a>
     <div class="nav-right">
       <div class="nav-socials">
 
@@ -70,8 +70,6 @@
 
       <!-- Project 1: Homelab -->
       <div class="project-card">
-
-        <!-- INTERACTIVE TERMINAL -->
         <div class="terminal-interactive">
           <div class="term-bar">
             <div class="term-dot term-dot--red"></div>
@@ -87,7 +85,6 @@
             <input class="term-input" id="term-cmd" type="text" autocomplete="off" spellcheck="false" placeholder="type a command...">
           </div>
         </div>
-
         <div class="project-info">
           <h4>Personal Homelab</h4>
           <p>
@@ -145,56 +142,46 @@
   <section id="skills" class="skills-section">
     <div class="skills-inner">
       <h2 class="section-title">Skills</h2>
-
       <div class="skills-icons">
 
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--ubuntu">Ubuntu</div>
           <span>Ubuntu</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--kali">Kali</div>
           <span>Kali Linux</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--mysql">MySQL</div>
           <span>MySQL</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--html">HTML</div>
           <span>HTML</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--css">CSS</div>
           <span>CSS</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--js">JS</div>
           <span>JavaScript</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--git">Git</div>
           <span>Git</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--cli">CLI</div>
           <span>Terminal</span>
         </div>
-
         <div class="skill-icon">
           <div class="skill-icon-img skill-icon-img--net">NET</div>
           <span>Networking</span>
         </div>
 
       </div>
-
       <p class="skills-desc">
         These are the technologies and tools I regularly work with. I have a strong grounding in Linux
         systems and hardware, and I'm actively growing my software engineering skills through my degree at
@@ -215,124 +202,17 @@
 
   <!-- FOOTER -->
   <footer>
-     <a href="#" class="nav-logo">
-  <img src="YOOOO.gif" alt="Andrew Hirst" class="nav-photo">
+    <a href="#" class="nav-logo">
+      <img src="YOOOO.gif" alt="Andrew Hirst" class="nav-photo">
+    </a>
     <div class="footer-links">
       <a href="https://github.com/Ajhrst" target="_blank">Github</a>
       <a href="https://www.linkedin.com/in/andrew-hirst-50b151275" target="_blank">LinkedIn</a>
     </div>
   </footer>
 
-
-  <!-- =============================================
-       TERMINAL JAVASCRIPT
-       To add a new command, copy one of the blocks
-       inside 'commands' and change the name + text.
-  ============================================== -->
-  <script>
-    const output = document.getElementById('term-output');
-    const input  = document.getElementById('term-cmd');
-
-    // ---- ADD OR EDIT COMMANDS HERE ----
-    const commands = {
-
-      help: () => [
-        { t: 'out', v: 'Available commands:' },
-        { t: 'out', v: '  whoami       — who is this guy' },
-        { t: 'out', v: '  docker ps    — running containers' },
-        { t: 'out', v: '  skills       — technical skills' },
-        { t: 'out', v: '  education    — where I study' },
-        { t: 'out', v: '  contact      — get in touch' },
-        { t: 'out', v: '  clear        — clear the terminal' },
-      ],
-
-      whoami: () => [
-        { t: 'out', v: 'Andrew Hirst' },
-        { t: 'out', v: 'Software Engineering student @ Edge Hill University' },
-        { t: 'out', v: 'Passionate about hardware, Linux & cybersecurity' },
-        { t: 'out', v: 'Based in Ormskirk, Lancashire, UK' },
-      ],
-
-      'docker ps': () => [
-        { t: 'out', v: 'CONTAINER ID   IMAGE         STATUS' },
-        { t: 'out', v: 'a1b2c3d4e5f6   jellyfin      Up 3 days' },
-        { t: 'out', v: 'b2c3d4e5f6a1   gameserver    Up 1 day' },
-        { t: 'out', v: 'c3d4e5f6a1b2   portainer     Up 3 days' },
-      ],
-
-      skills: () => [
-        { t: 'out', v: 'Languages:   HTML, CSS, JavaScript' },
-        { t: 'out', v: 'Systems:     Ubuntu Server, Kali Linux' },
-        { t: 'out', v: 'Tools:       Docker, Git, MySQL, SSH' },
-        { t: 'out', v: 'Other:       PC hardware, Networking' },
-      ],
-
-      education: () => [
-        { t: 'out', v: 'Degree:      BSc Software Engineering' },
-        { t: 'out', v: 'University:  Edge Hill University' },
-        { t: 'out', v: 'Year:        2nd year (in progress)' },
-      ],
-
-      contact: () => [
-        { t: 'out', v: 'Email:     ajhirst04@gmail.com' },
-        { t: 'out', v: 'GitHub:    github.com/Ajhrst' },
-        { t: 'out', v: 'LinkedIn:  linkedin.com/in/andrew-hirst-50b151275' },
-      ],
-
-      clear: () => {
-        output.innerHTML = '';
-        return [];
-      },
-
-      // Easter eggs
-      sudo: () => [{ t: 'err', v: "Nice try. You don't have sudo access here." }],
-      ls:   () => [{ t: 'out', v: 'homelab/   portfolio/   skills.txt   contact.txt' }],
-      pwd:  () => [{ t: 'out', v: '/home/andrew' }],
-      uname:() => [{ t: 'out', v: 'Linux ubuntu-server 6.5.0 #1 SMP x86_64 GNU/Linux' }],
-
-    };
-    // ---- END OF COMMANDS ----
-
-
-    function printLine(text, type) {
-      const div = document.createElement('div');
-      div.className = type === 'err' ? 'term-err' : 'term-out';
-      div.textContent = text;
-      output.appendChild(div);
-    }
-
-    function run(cmd) {
-      const trimmed = cmd.trim().toLowerCase();
-
-      const promptDiv = document.createElement('div');
-      promptDiv.className = 'term-line';
-      promptDiv.innerHTML = '<span class="term-prompt">andrew@ubuntu-server:~$</span><span class="term-cmd-text">' + cmd + '</span>';
-      output.appendChild(promptDiv);
-
-      if (!trimmed) { output.scrollTop = output.scrollHeight; return; }
-
-      const handler = commands[trimmed];
-      if (handler) {
-        const lines = handler();
-        lines.forEach(function(l) { printLine(l.v, l.t); });
-      } else {
-        printLine("command not found: " + trimmed + ". Try 'help'", 'err');
-      }
-
-      output.scrollTop = output.scrollHeight;
-    }
-
-    input.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') {
-        run(input.value);
-        input.value = '';
-      }
-    });
-
-    document.querySelector('.terminal-interactive').addEventListener('click', function() {
-      input.focus();
-    });
-  </script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 
 </body>
 </html>
